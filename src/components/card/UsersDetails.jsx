@@ -4,8 +4,8 @@ import { BiSolidMessageDots } from "react-icons/bi";
 
 function UsersDetails() {
   return (
-    <div className="col-6">
-      <div className="bg-white ps-1 border">
+    <div className="col-12 mb-3 col-md-6">
+      <div className="bg-white ps-1 border overflow-auto">
         <h3 className="text-uppercase fs-6 mt-2 py-1 px-4">NEW users</h3>
         <hr />
         <table className="table">

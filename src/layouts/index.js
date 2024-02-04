@@ -12,12 +12,13 @@ const Container = styled.div`
   flex-direction: column;
 `;
 const NavbarPaner = styled.div`
+  background-color: #fff;
   flex: 1;
   position: fixed;
   top: 0;
   left: 0px;
   width: 100%;
-  height: 50px;
+  height: 70px;
   transition: padding 0.3s;
   z-index: 2;
   padding: ${({ openedMenu, minViewPort }) =>

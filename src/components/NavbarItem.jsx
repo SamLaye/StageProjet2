@@ -1,7 +1,6 @@
 import React from "react";
 import _user from "../assets/images/_user.png";
 import Button from "./Button";
-// import Input from "./Input";
 import Image from "./Image";
 
 function NavbarItem() {
@@ -9,6 +8,7 @@ function NavbarItem() {
   return (
     <div
       style={{
+        marginTop: "auto",
         display: "flex",
         width: "100%",
         justifyContent: "space-between",
@@ -28,10 +28,6 @@ function NavbarItem() {
           bgColor="transparent"
           color="#c34b64"
         />
-        {/* <div className="input-group bg-danger">
-          <i className="bi bi-search"></i>
-          <Input /> */}
-        {/* </div> */}
       </div>
       <div
         style={{
@@ -41,7 +37,7 @@ function NavbarItem() {
           width: "40%",
         }}
       >
-        <i className="bi bi-bell-fill "></i>
+        <i className="bi bi-bell-fill fs-4"></i>
         <Image src={_user} imgWidth="40px" />
       </div>
     </div>
