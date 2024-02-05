@@ -8,7 +8,6 @@ function NavbarItem() {
   return (
     <div
       style={{
-        marginTop: "auto",
         display: "flex",
         width: "100%",
         justifyContent: "space-between",
@@ -23,11 +22,25 @@ function NavbarItem() {
       >
         <Button
           title={btnTitle}
-          btnMargin="auto 0"
-          bdrColor="#c34b64"
+          btnMargin="auto 10px"
+          bdrColor="#fc5c7d"
           bgColor="transparent"
-          color="#c34b64"
+          color="#fc5c7d"
+          btnWidth={"70px"}
+          // btnMargin={"0 0 0 10px"}
         />
+        <div className="input-group" style={{ border: "1px solid #ddd" }}>
+          <i
+            className="bi bi-search px-2 my-auto"
+            style={{ color: "#fc5c7d", cursor: "pointer" }}
+          ></i>
+          <input
+            type="text"
+            className="form-control border-0 shadow-none"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </div>
       </div>
       <div
         style={{
@@ -37,8 +50,11 @@ function NavbarItem() {
           width: "40%",
         }}
       >
-        <i className="bi bi-bell-fill fs-4"></i>
-        <Image src={_user} imgWidth="40px" />
+        <i
+          className="bi bi-bell-fill fs-5 my-auto"
+          style={{ color: "#fc5c7d", cursor: "pointer" }}
+        ></i>
+        <Image src={_user} imgWidth="40px" className={"ms-3"} />
       </div>
     </div>
   );

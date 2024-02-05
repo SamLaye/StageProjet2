@@ -1,0 +1,17 @@
+@media screen and (max-width: 798px) {
+    #filArianeT1{
+        font-size: 20px !important;
+        margin: 15px 0 !important;
+    }
+    #filArianeT2{
+        font-size: 15px !important;
+    }
+}
+@media screen and (max-width: 300px) {
+    #filArianeT1{
+        font-size: 17px !important;
+    }
+    #filArianeT2{
+        font-size: 13px !important;
+    }
+}

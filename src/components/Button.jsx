@@ -19,16 +19,17 @@ function Button({
   btnMargin,
   boostrapStyle,
   btnWidth,
+  bdrColor,
 }) {
   return (
     <button
       style={{
-        border: "1px solid " + bgColor,
+        border: "1px solid " + bdrColor,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         width: btnWidth ? btnWidth : "100%",
-        backgroundColor: bgColor ?? "#fff",
+        backgroundColor: bgColor ? bgColor : "#fff",
         height: height ?? 40,
         overflow: "hidden",
         paddingLeft: 10,

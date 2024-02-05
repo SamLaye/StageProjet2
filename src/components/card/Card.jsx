@@ -7,7 +7,10 @@ function Card({ cardCol }) {
     <div className="col-12 col-md-6 col-lg-3 mb-2">
       <div className="border bg-white p-4">
         <div className="d-flex justify-content-between">
-          <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+          <h3
+            style={{ fontSize: "18px", fontWeight: "bold" }}
+            className="card_CardLabel"
+          >
             {cardCol.cardLabel}
           </h3>
           <p style={{ color: "#fc5c7d", fontSize: "18px" }}>{cardCol.stat}</p>

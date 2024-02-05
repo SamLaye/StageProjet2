@@ -7,10 +7,10 @@ function NavbarComponent({ bgColor, navbarContainerStyles }) {
       style={{
         display: "flex",
         alignItems: "center",
-        padding: "0 20px",
-        height: 50,
+        padding: "12px 20px",
+        height: "100%",
         backgroundColor: bgColor ? bgColor : "#fff",
-        borderBottom: "1px solid rgba(0,0,0,0.1)",
+        // borderBottom: "1px solid rgba(0,0,0,0.1)",
         ...navbarContainerStyles,
       }}
     >
