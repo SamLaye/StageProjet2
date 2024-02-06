@@ -34,6 +34,7 @@ const SidebarComponent = ({
         padding: "25px 10px",
         borderRight: "1px solid rgba(0,0,0,0.1)",
         textTransform: "uppercase",
+        overflow: "hidden",
       }}
     >
       <div

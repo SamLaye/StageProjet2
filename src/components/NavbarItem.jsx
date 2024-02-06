@@ -1,10 +1,9 @@
 import React from "react";
 import _user from "../assets/images/_user.png";
-import Button from "./Button";
 import Image from "./Image";
 
 function NavbarItem() {
-  const btnTitle = <i className="bi bi-list-nested fs-3"></i>;
+  // const btnTitle = <i className="bi bi-list-nested fs-3"></i>;
   return (
     <div
       style={{
@@ -17,19 +16,11 @@ function NavbarItem() {
         style={{
           display: "flex",
           flexDirection: "row",
+          // marginLeft: "40px !important",
         }}
-        // className="bg-primary"
+        className="ms-5"
       >
-        <Button
-          title={btnTitle}
-          btnMargin="auto 10px"
-          bdrColor="#fc5c7d"
-          bgColor="transparent"
-          color="#fc5c7d"
-          btnWidth={"70px"}
-          // btnMargin={"0 0 0 10px"}
-        />
-        <div className="input-group" style={{ border: "1px solid #ddd" }}>
+        <div className="input-group ms-5" style={{ border: "1px solid #ddd" }}>
           <i
             className="bi bi-search px-2 my-auto"
             style={{ color: "#fc5c7d", cursor: "pointer" }}
