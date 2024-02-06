@@ -1,3 +1,13 @@
+@media screen and (min-width: 900px) {
+    #menuControllerInSidebar{
+        display: none !important;
+    }
+}
+@media screen and (min-width: 900px) {
+    #menuControllerInSidebar{
+        display: flex;
+    }
+}
 @media screen and (max-width: 798px) {
     #filArianeT1{
         font-size: 20px !important;

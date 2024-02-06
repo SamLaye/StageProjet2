@@ -106,11 +106,15 @@ const SpliTemplateScreen = ({ children }) => {
             ) : (
               <AiOutlineMenuFold className="menu-controller-icon" />
             )}
-          </MenuController>
+        </MenuController>
         {navbar}
       </NavbarPaner>
       <BodyContainer>
         <SidebarPaner openedMenu={openedMenu} ref={sidebarRef} style={{ overflow: "hidden" }}>
+          <MenuController onClick={handleResize} id="menuControllerInSidebar"
+          style={{ marginLeft: "180px", top: "27px", backgroundColor: "transparent", color: "#fff", width: "55px", height: "35px" }}>
+              <AiOutlineMenuFold className="menu-controller-icon" />
+        </MenuController>
           {sidebar}
         </SidebarPaner>
         <ContaintOutlet openedMenu={openedMenu} minViewPort={minViewPort}>
