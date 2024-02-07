@@ -13,7 +13,7 @@ function MyModal() {
           backgroundImage: "linear-gradient(to bottom, #5569c5, #c34b64)",
         }}
       >
-        <Image src={_user} imgWidth="40px" className={"ms-3"} />
+        <Image src={_user} imgWidth="75px" />
         <p>Jane</p>
         <span className="">jane@jane.com</span>
         <span className="">Last updated 3 mins ago</span>

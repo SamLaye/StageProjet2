@@ -4,7 +4,6 @@ import Image from "./Image";
 import MyModal from "./MyModal";
 
 function NavbarItem() {
-  const v = false;
   const [openModal, setOpenModal] = useState(false);
   return (
     <div
@@ -53,7 +52,7 @@ function NavbarItem() {
         <Image
           src={_user}
           imgWidth="40px"
-          evennement={() => setOpenModal(!v)}
+          evennement={() => setOpenModal(!openModal)}
           className={"ms-3"}
         />
         {openModal ? <MyModal /> : ""}

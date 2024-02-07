@@ -70,7 +70,7 @@ const ContaintOutlet = styled.div`
     "70px 10px 0 10px" :
     minViewPort ?
       "70px 10px 0 70px" :
-      "70px 10px 0 270px"};
+      "70px 10px 0 260px"};
 `;
 const SpliTemplateScreen = ({ children }) => {
   const [openedMenu, setOpenedMenu] = useState(false);
