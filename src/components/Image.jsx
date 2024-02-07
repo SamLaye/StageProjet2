@@ -9,12 +9,14 @@ function Image({
   imgHeight,
   imgObjectFit,
   right,
+  evennement,
 }) {
   return (
     <img
       src={src}
       alt={alt}
       className={className}
+      onClick={evennement}
       style={{
         width: imgWidth,
         display: imgDisplay,

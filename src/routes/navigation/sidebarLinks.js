@@ -9,7 +9,12 @@ import {
     INPUT_GROUPS_PATH,
     WIDGETS_PATH
 } from "./navigationPaths";
-import { HiHome, HiMenu } from "react-icons/hi";
+import { MdDashboard, MdWidgets, MdArrowDropDownCircle } from "react-icons/md";
+import { RiLayout6Fill, RiRadioButtonLine } from "react-icons/ri";
+import { IoIosStats, IoMdStar } from "react-icons/io";
+import { LuCircleDotDashed } from "react-icons/lu";
+import { SiFormstack } from "react-icons/si";
+import { FaListUl } from "react-icons/fa6";
 
 /*
 |--------------------------------------------------------------------------
@@ -20,15 +25,14 @@ import { HiHome, HiMenu } from "react-icons/hi";
 | de SplitShell
 */
 export const links = [
-    { path: ACCEUIL_PATH, icon: HiHome, label: "Dashbord" },
-    { path: CARDS_PATH, icon: HiMenu, label: "CARDS" },
-    { path: CHARTS_PATH, icon: HiHome, label: "CHARTS" },
-    { path: WIDGETS_PATH, icon: HiHome, label: "WIDGETS" },
-    // // { path: UUUUUUU_PATH, icon: HiHome, label: "Components" },
-    { path: BUTTON_PATH, icon: HiHome, label: "BUTTON" },
-    { path: BUTTON_GROUPS_PATH, icon: HiHome, label: "BUTTON GROUPS" },
-    { path: FORMS_PATH, icon: HiHome, label: "FORMS" },
-    { path: INPUT_GROUPS_PATH, icon: HiHome, label: "INPUT GROUPS" },
-    { path: DROPDOWNS_PATH, icon: HiHome, label: "DROPDOMNS" },
-    { path: BADGES_PATH, icon: HiHome, label: "BADGES" },
+    { path: ACCEUIL_PATH, icon: MdDashboard, label: "Dashbord" },
+    { path: CARDS_PATH, icon: RiLayout6Fill, label: "CARDS" },
+    { path: CHARTS_PATH, icon: IoIosStats, label: "CHARTS" },
+    { path: WIDGETS_PATH, icon: MdWidgets, label: "WIDGETS" },
+    { path: BUTTON_PATH, icon: RiRadioButtonLine, label: "BUTTON" },
+    { path: BUTTON_GROUPS_PATH, icon: LuCircleDotDashed, label: "BUTTON GROUPS" },
+    { path: FORMS_PATH, icon: SiFormstack, label: "FORMS" },
+    { path: INPUT_GROUPS_PATH, icon: FaListUl, label: "INPUT GROUPS" },
+    { path: DROPDOWNS_PATH, icon: MdArrowDropDownCircle, label: "DROPDOMNS" },
+    { path: BADGES_PATH, icon: IoMdStar, label: "BADGES" },
 ]

@@ -23,6 +23,7 @@ function Modal({ opened, onClosed, title, children }) {
           <span>{title ? title : "Modal Title"}</span>
           <div className="modal-close-icon" onClick={() => onClosed()}>
             <AiOutlineClose size={20} />
+            jnjii
           </div>
         </div>
         <hr />

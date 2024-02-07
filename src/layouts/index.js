@@ -46,7 +46,7 @@ const MenuController = styled.div`
   position: absolute;
   top: 15px;
   // left: 30px;
-  width: 70px;
+  width: 60px;
   height: 40px;
   background-color: #fff;
   // border-radius: 50%;
@@ -67,7 +67,7 @@ const ContaintOutlet = styled.div`
   z-index: 1;
   padding: ${({ openedMenu, minViewPort }) =>
   openedMenu ?
-    "70px 10px 0 20px" :
+    "70px 10px 0 10px" :
     minViewPort ?
       "70px 10px 0 70px" :
       "70px 10px 0 270px"};
@@ -100,7 +100,7 @@ const SpliTemplateScreen = ({ children }) => {
       <NavbarPaner openedMenu={openedMenu} minViewPort={minViewPort}>
         <MenuController onClick={handleResize}
         className="ms-4 fs-3"
-        style={{ color: "#fc5c7d" }}>
+        style={{ color: "#fc5c7d", borderRadius: "5px" }}>
             {openedMenu ? (
               <AiOutlineMenuUnfold className="menu-controller-icon" />
             ) : (

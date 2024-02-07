@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import _user from "../assets/images/_user.png";
 import Image from "./Image";
+import MyModal from "./MyModal";
 
 function NavbarItem() {
-  // const btnTitle = <i className="bi bi-list-nested fs-3"></i>;
+  const v = false;
+  const [openModal, setOpenModal] = useState(false);
   return (
     <div
       style={{
@@ -20,7 +22,10 @@ function NavbarItem() {
         }}
         className="ms-5"
       >
-        <div className="input-group ms-5" style={{ border: "1px solid #ddd" }}>
+        <div
+          className="input-group ms-4 rounded"
+          style={{ border: "1px solid #ddd" }}
+        >
           <i
             className="bi bi-search px-2 my-auto"
             style={{ color: "#fc5c7d", cursor: "pointer" }}
@@ -45,7 +50,13 @@ function NavbarItem() {
           className="bi bi-bell-fill fs-5 my-auto"
           style={{ color: "#fc5c7d", cursor: "pointer" }}
         ></i>
-        <Image src={_user} imgWidth="40px" className={"ms-3"} />
+        <Image
+          src={_user}
+          imgWidth="40px"
+          evennement={() => setOpenModal(!v)}
+          className={"ms-3"}
+        />
+        {openModal ? <MyModal /> : ""}
       </div>
     </div>
   );
